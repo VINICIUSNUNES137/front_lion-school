@@ -1,0 +1,25 @@
+.media {
+  display: flex;
+  gap: 16px;
+}
+
+.media__container {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  transition: all 0.5s;
+}
+
+.media__container:hover {
+  cursor: pointer;
+  background-color: var(--hover-color);
+}
+
+.media__icon {
+  height: 16px;
+}

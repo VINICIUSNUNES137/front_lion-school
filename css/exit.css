@@ -1,0 +1,12 @@
+.exit {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  gap: 8px;
+}
+
+.exit svg {
+  width: 48px;
+}

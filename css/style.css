@@ -1,0 +1,114 @@
+:root {
+  --primary-color: #3347b0;
+  --hover-color: #5c6aafd9;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  width: 100vw;
+  height: 100px;
+  background: var(--primary-color);
+  padding: 12px 32px;
+  justify-content: space-between;
+  display: flex;
+}
+
+main {
+  height: 100%;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer {
+  width: 100vw;
+  background: var(--primary-color);
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 64px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+/* Fundo que corre */
+
+::-webkit-scrollbar {
+  height: 5px;
+}
+
+/* Linha que desce */
+::-webkit-scrollbar-thumb {
+  background: var(--hover-color);
+  border-radius: 15px;
+}
+
+@media (max-width: 720px) {
+  #contact {
+    display: none;
+  }
+  #media {
+    display: none;
+  }
+  footer {
+    justify-content: center;
+    padding: 0;
+  }
+  .copy {
+    display: flex;
+  }
+  .vector-people {
+    display: none;
+  }
+  #curso__name {
+    width: 300px;
+    text-align: center;
+  }
+
+  #curso {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    gap: 12px;
+    align-items: center;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  #curso__image {
+    height: 75px;
+  }
+
+  #container {
+    gap: 16px;
+    width: 200px;
+    overflow-x: scroll;
+  }
+
+  #card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px !important;
+    padding: 16px;
+    height: 50px;
+    background: var(--primary-color);
+  }
+}
