@@ -5,9 +5,7 @@
   /* height: 40vh; */
   overflow-x: scroll;
   padding: 0 16px;
-  background-color: aquamarine;
 }
-
 .card {
   display: flex;
   align-items: center;
@@ -29,5 +27,6 @@
 }
 
 .card img {
-  height: 80%;
+  height: 50px;
+  width: fit-content;
 }

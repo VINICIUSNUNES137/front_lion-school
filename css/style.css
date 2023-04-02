@@ -29,7 +29,6 @@ header {
 main {
   height: 100%;
   width: 100vw;
-  background-color: bisque;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -126,10 +125,9 @@ footer {
     gap: 16px;
     width: 200px;
     overflow-x: scroll;
-    
   }
 
-  .container > div {
+  .container > a {
     display: flex;
     align-items: center;
     justify-content: center;
