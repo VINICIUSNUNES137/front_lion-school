@@ -60,6 +60,9 @@ footer {
 }
 
 @media (max-width: 720px) {
+  body {
+    overflow: hidden;
+  }
   #contact {
     display: none;
   }
@@ -93,7 +96,7 @@ footer {
   }
 
   #curso__image {
-    height: 75px;
+    height: 125px;
   }
 
   #container {
@@ -106,9 +109,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px !important;
+    width: 150px;
     padding: 16px;
-    height: 50px;
+    height: 75px;
     background: var(--primary-color);
   }
 }
