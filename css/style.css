@@ -28,6 +28,7 @@ header {
 
 main {
   height: 100%;
+  width: 100vw;
   background-color: bisque;
   display: flex;
   align-items: center;
@@ -93,6 +94,7 @@ footer {
 
   main {
     flex-direction: column;
+    height: 100%;
   }
 
   #curso__image {
@@ -113,5 +115,7 @@ footer {
     padding: 16px;
     height: 75px;
     background: var(--primary-color);
+    font-size: 2rem;
+    gap: 16px;
   }
 }

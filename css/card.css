@@ -16,6 +16,9 @@
   background: var(--primary-color);
   cursor: pointer;
   transition: all 0.5s;
+  gap: 32px;
+  font-weight: 800;
+  font-size: 3rem;
 }
 
 .card:hover {
