@@ -45,13 +45,34 @@ footer {
   padding: 0 64px;
 }
 
+.copy {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.autor {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.autor::before {
+  font-weight: 300;
+  content: 'vinicius ';
+}
+
+.autor::after {
+  font-weight: 300;
+  content: ' bianca';
+}
+
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
 /* Fundo que corre */
 
 ::-webkit-scrollbar {
-  height: 5px;
+  height: 10px;
 }
 
 /* Linha que desce */
@@ -105,9 +126,10 @@ footer {
     gap: 16px;
     width: 200px;
     overflow-x: scroll;
+    
   }
 
-  #card {
+  .container > div {
     display: flex;
     align-items: center;
     justify-content: center;
