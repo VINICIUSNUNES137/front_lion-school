@@ -1,6 +1,6 @@
 .aluno-container {
   height: 100%;
-  width: 100vw;
+  width: 0;
   display: flex;
   align-items: center;
   gap: 32px;
