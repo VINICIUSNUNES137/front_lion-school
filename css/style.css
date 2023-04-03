@@ -11,6 +11,17 @@
   color: #fff;
 }
 
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -56,10 +67,16 @@ footer {
   align-items: center;
   gap: 3px;
 }
-.autor {
-  font-size: 1.1rem;
-  font-weight: 800;
+
+footer .copy p a {
+  color: #ffffffb1;
+  font-weight: bold;
 }
+
+footer .copy p a:hover {
+  font-style: oblique;
+}
+
 
 .autor::before {
   font-weight: 300;
@@ -74,6 +91,7 @@ footer {
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
+
 /* Fundo que corre */
 
 ::-webkit-scrollbar {
@@ -86,26 +104,35 @@ footer {
   border-radius: 15px;
 }
 
+
+
+
 @media (max-width: 720px) {
   body {
     overflow: hidden;
   }
+
   #contact {
     display: none;
   }
+
   #media {
     display: none;
   }
+
   footer {
     justify-content: center;
     padding: 0;
   }
+
   .copy {
     display: flex;
   }
+
   .vector-people {
     display: none;
   }
+
   #curso__name {
     width: 300px;
     text-align: center;
@@ -133,7 +160,7 @@ footer {
     overflow-x: scroll;
   }
 
-  .container > a {
+  .container>a {
     display: flex;
     align-items: center;
     justify-content: center;
