@@ -11,6 +11,8 @@
   width: 300px;
 }
 
+
+
 .curso__name::after {
   content: ' para gerenciar';
   font-weight: 300;

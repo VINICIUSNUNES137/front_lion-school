@@ -6,10 +6,7 @@ let contUser = 0
 
 const criarCurso = curso => {
 
-  const card = document.createElement('a')
-  // card.href = "../alunos.html"
-  // card.href = "#"
-  // card.target = '_blank'
+  const card = document.createElement('div')
   card.classList.add('card')
   card.id = curso.sigla
 
@@ -25,17 +22,13 @@ const criarCurso = curso => {
 
 
   card.addEventListener('click', function () {
-    // window.location.href = '../alunos.html'
     carregarAluno(card.id)
   })
-
 
   return card
 }
 
 const carregarCursos = async () => {
-
-  // window.location.href = '../index.html'
 
   const url = 'http://localhost:8080/v1/lion-school/cursos'
 
@@ -51,46 +44,64 @@ const carregarCursos = async () => {
 
 }
 
+console.log(window.localStorage);
+
 carregarCursos()
 
-
 const criarAluno = aluno => {
-  // const curso_name = document.createElement('h2')
+  
   const cardAluno = document.createElement('div')
-  cardAluno.classList.add('card-aluno')
-
+  if(aluno.status == 'Finalizado'){
+    cardAluno.classList.add('card-aluno__finalizado')  
+  }else{
+  cardAluno.classList.add('card-aluno__cursando')
+  }
   const imgAluno = document.createElement('img')
   imgAluno.src = aluno.foto
   imgAluno.classList.add('aluno-image')
 
   const nomeAluno = document.createElement('span')
   nomeAluno.classList.add('aluno-name')
-  nomeAluno.textContent = aluno.nome
+  nomeAluno.textContent = aluno.nome.toUpperCase()
 
   cardAluno.append(imgAluno, nomeAluno)
 
   return cardAluno
 }
 
-
 const carregarAluno = async (siglaDoCurso) => {
 
-  // const response = await fetch(`http://localhost:8080/v1/lion-school/alunos?curso=${siglaDoCurso}`)
+  //fetch da API de alunos do curso
   const response = await fetch(`http://localhost:8080/v1/lion-school/alunos?curso=${siglaDoCurso}`)
   const data = await response.json()
   const alunos = await data.alunos
 
+  //fetch da API do nome do curso
+  const responseCurso = await fetch(`http://localhost:8080/v1/lion-school/cursos/${siglaDoCurso}`)
+  const dataCurso = await responseCurso.json()
+  const nomeCurso = await dataCurso.curso
+
+  //criando titulo aqui 
+  const tituloCurso = document.createElement('h2')
+  tituloCurso.classList.add('curso__title')
+  tituloCurso.textContent = nomeCurso
+  //acabando aqui
+
   const containerAluno = document.getElementById('aluno-container')
   containerAluno.classList.add('aluno-container')
   containerAluno.style.width = '100%'
+  containerAluno.style.height = '100%'
   const cardAlunos = alunos.map(criarAluno)
-
 
   const containerCurso = document.getElementById('curso-container')
   containerCurso.style.display = 'none'
 
+  const containerCard  = document.createElement('div')
+  containerCard.classList.add('container-card')
 
-  containerAluno.replaceChildren(...cardAlunos)
+  containerAluno.append(tituloCurso)
+  containerCard.append(...cardAlunos)
+  containerAluno.append(containerCard)
+  // containerAluno.replaceChildren(...cardAlunos)
 
-}
-
+} 
