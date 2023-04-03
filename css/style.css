@@ -68,12 +68,12 @@ footer {
   gap: 3px;
 }
 
-footer .copy p a {
+footer p a {
   color: #ffffffb1;
   font-weight: bold;
 }
 
-footer .copy p a:hover {
+footer p a:hover {
   font-style: oblique;
 }
 
