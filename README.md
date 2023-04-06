@@ -44,6 +44,7 @@ Projeto proposto pelos professores [Fernando Leonid](https://github.com/fernando
 - HTML5
 - CSS3
 - JAVASCRIPT
+- NODE.JS
 
 </div>
 
