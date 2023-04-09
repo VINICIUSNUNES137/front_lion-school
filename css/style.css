@@ -1,7 +1,9 @@
 :root {
   --primary-color: #3347b0;
-  --secundary-color: #E5B657;
+  --secundary-color: #e5b657;
+  --tertiary-color: #c11010;
   --hover-color: #5c6aafd9;
+  /* NOTAS */
 }
 
 * {
@@ -20,11 +22,31 @@ body {
 
 header {
   width: 100vw;
-  height: 100px;
+  height: fit-content;
   background: var(--primary-color);
-  padding: 12px 32px;
+  /* padding: 12px 32px; */
   justify-content: space-between;
   display: flex;
+  flex-direction: column;
+}
+
+.header__design {
+  display: flex;
+  padding: 12px 32px;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.exit {
+  cursor: pointer;
+}
+
+.visible {
+  color: white;
+}
+
+.invisible {
+  color: transparent;
 }
 
 .curso-container {
@@ -138,13 +160,13 @@ footer {
     overflow-x: scroll;
   }
 
-  .container > a {
+  .container > div {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 150px;
     padding: 16px;
-    height: 50px;
+    height: 75px;
     background: var(--primary-color);
     font-size: 2rem;
     gap: 16px;

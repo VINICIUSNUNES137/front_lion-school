@@ -10,15 +10,11 @@
     <link rel="stylesheet" href="./css/exit.css" />
     <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/media.css" />
-    <link rel="stylesheet" href="./css/alunos-card.css" />
+    <link rel="stylesheet" href="./css/dados-aluno.css" />
     <link rel="icon" type="image/png" href="./img/logo.svg" />
-    <link rel="stylesheet" href="./css/nav.css" />
-    <link rel="stylesheet" href="./css/alunos-card.css" />
-
     <script src="./js/app.js" defer type="module"></script>
     <title>Lion School</title>
   </head>
-
   <body>
     <header>
       <div class="header__design">
@@ -68,95 +64,48 @@
           <span>Voltar</span>
         </div>
       </div>
-      <nav class="navigation">
-        <div>
-          <ul class="menu">
-            <li>
-              <a href="#" class="menu-title">STATUS</a>
-              <ul>
-                <li id="todos-content">
-                  <a href="#" id="todos"
-                    >Todos <span id="todos__span" class="visible">✓</span></a
-                  >
-                </li>
-                <li id="cursando-content">
-                  <a href="#" id="cursando"
-                    >Cursando
-                    <span id="cursando__span" class="invisible">✓</span></a
-                  >
-                </li>
-                <li id="finalizando_content">
-                  <a href="#" id="finalizado"
-                    >Finalizado
-                    <span id="finalizado__span" class="invisible">✓</span></a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="menu">
-            <li>
-              <a href="#" class="menu-title">ANO</a>
-              <ul>
-                <li id="todos-content">
-                  <a href="#" id="todos"
-                    >Todos <span id="todosAnos" class="visible">✓</span></a
-                  >
-                </li>
-                <li id="2020-content">
-                  <a href="#" id="cursando"
-                    >2020 <span id="2020" class="invisible">✓</span></a
-                  >
-                </li>
-                <li id="2021_content">
-                  <a href="#" id="finalizado"
-                    >2021 <span id="2021" class="invisible">✓</span></a
-                  >
-                </li>
-                <li id="finalizando_content">
-                  <a href="#" id="finalizado"
-                    >2022 <span id="2022" class="invisible">✓</span></a
-                  >
-                </li>
-                <li id="finalizando_content">
-                  <a href="#" id="finalizado"
-                    >2023 <span id="2023" class="invisible">✓</span></a
-                  >
-                </li>
-                <li id="finalizando_content">
-                  <a href="#" id="finalizado"
-                    >2024 <span id="2024" class="invisible">✓</span></a
-                  >
-                </li>
-                <li id="finalizando_content">
-                  <a href="#" id="finalizado"
-                    >2025 <span id="2025" class="invisible">✓</span></a
-                  >
-                </li>
-                <li id="finalizando_content">
-                  <a href="#" id="finalizado"
-                    >2026 <span id="2026" class="invisible">✓</span></a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="legenda">
-          <span>LEGENDA</span>
-          <div class="lengenda-content">
-            <div class="content">
-              <div class="quadrado-azul"></div>
-              <span>CURSANDO</span>
-              <div class="quadrado-amarelo"></div>
-              <span>FINALIZADO</span>
-            </div>
-          </div>
-        </div>
-      </nav>
     </header>
     <main>
-      <div class="aluno-container" id="aluno-container"></div>
+      <div class="dados-aluno" id="dados-aluno">
+        <div class="design__aluno">
+          <img
+            class="aluno__image"
+            src="https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-4-avatar-2754580_120522.png"
+            alt="" />
+          <span class="aluno__name">HELOISA SANTOS ARAUJO</span>
+        </div>
+        <div class="grafico__aluno">
+          <div class="materia">
+            <span class="materia__nota">90</span>
+            <div class="materia__barra-content">
+              <div class="nota-boa"></div>
+            </div>
+            <span class="materia__name">SOP</span>
+          </div>
+          <div class="materia">
+            <span class="materia__nota">80</span>
+            <div class="materia__barra-content">
+              <div class="nota-boa"></div>
+            </div>
+            <span class="materia__name">SOP</span>
+          </div>
+
+          <div class="materia">
+            <span class="materia__nota">60</span>
+            <div class="materia__barra-content">
+              <div class="nota-regular"></div>
+            </div>
+            <span class="materia__name">AAS</span>
+          </div>
+          <div class="materia">
+            <span class="materia__nota">25</span>
+            <div class="materia__barra-content">
+              <div class="nota-ruim"></div>
+            </div>
+            <span class="materia__name">SSA</span>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="contact" id="contact">
