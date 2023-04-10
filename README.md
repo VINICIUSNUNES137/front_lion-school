@@ -59,7 +59,7 @@ Esse projeto foi proposto pelo professor de PWFE (Programação Web Front End) e
 
 <h1>DOCUMENTAÇÃO</h1> 
 
-- A documentação da API foi gerada de forma padrão pelo postman [clique aqui](https://documenter.getpostman.com/view/23640177/2s93JzJzHw) para conferir.
+- A documentação da API foi gerada de forma padrão pelo postman [clique aqui](https://documenter.getpostman.com/view/23640177/2s93RTRY5H) para conferir.
 
 
 
