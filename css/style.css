@@ -58,6 +58,12 @@ header {
   justify-content: space-evenly;
 }
 
+.not_found {
+  font-size: 3rem;
+  color: #3347b0;
+  font-weight: 800;
+}
+
 main {
   display: flex;
   width: 100%;

@@ -28,21 +28,8 @@
   color: var(--primary-color);
   font-size: 1.5rem;
   font-weight: 800;
+  text-align: center;
 }
-
-/* <div class="grafico__aluno">
-<div class="materia">
-<span class="materia__nota">90</span>
-<div class="materia__barra-content">
-<div class="background">
-<div class="foreground"></div>
-</div>
-</div>
-<div class="materia__name">SOP
-
-</div>
-</div>
-</div> */
 
 .grafico__aluno {
   display: flex;
