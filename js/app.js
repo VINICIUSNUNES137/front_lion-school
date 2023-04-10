@@ -138,9 +138,9 @@ const carregarAluno = async (status, ano) => {
 //navegação da página (VOLTAR)
 const exit = document.getElementById("exit")
 exit.addEventListener('click', function () {
-  if (window.location.href == 'http://127.0.0.1:5500/front_lion-school/index.html') {
+  if (window.location.href == 'https://viniciusnunes137.github.io/front_lion-school/index.html') {
     window.history.back();
-  } else if (window.location.href == 'http://127.0.0.1:5500/front_lion-school/alunos.html') {
+  } else if (window.location.href == 'https://viniciusnunes137.github.io/front_lion-school/alunos.html') {
     window.open('./index.html', '_self')
   } else {
     window.open('./alunos.html', '_self')
@@ -329,9 +329,9 @@ const loadContentStudent = async () => {
 }
 
 //start das páginas
-if (window.location.href == 'http://127.0.0.1:5500/front_lion-school/index.html') {
+if (window.location.href == 'https://viniciusnunes137.github.io/front_lion-school/index.html') {
   carregarCursos()
-} else if (window.location.href == 'http://127.0.0.1:5500/front_lion-school/alunos.html') {
+} else if (window.location.href == 'https://viniciusnunes137.github.io/front_lion-school/alunos.html') {
   nav()
   carregarAluno()
 } else {
