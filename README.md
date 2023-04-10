@@ -1,6 +1,10 @@
-# <div align="center"><h1>LION SCHOOL</h1></div>
+# LION SCHOOL
 
-## [Clique aqui](https://viniciusnunes137.github.io/whatsApp-senai-1-2023/ds2m/vinicius_nunes_de_oliveira/) para acessar o site
+| MOBILE                                     |             DESKTOP             |
+| :----------------------------------------- | :-----------------------------: |
+| <a href="https://lion-school.netlify.app/"><img heigth="400" src="./img/mobile.png"/></a> | <a href="https://lion-school.netlify.app/"><img heigth="400" src="./img/desktop.png"  /></a> |
+
+## [Clique aqui](https://lion-school.netlify.app/) para acessar o site
 
 <div>   
 <h1>SUMÁRIO</h1>
