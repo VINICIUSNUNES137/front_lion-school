@@ -13,6 +13,7 @@
 - [TECNOLOGIAS APLICADAS](#tecnologias-aplicadas)
 - [FERRAMENTAS](#ferramentas)
 - [CONCEITOS APLICADOS](#conceitos-aplicados)
+- [DOCUMENTACAO](#documentacao)
 - [COLABORADORES](#colaboradores)
 
 </div>
@@ -45,7 +46,7 @@ Esse projeto foi proposto pelo professor de PWFE (Programação Web Front End) e
        <a href="https://skillicons.dev">
       <img src="https://skillicons.dev/icons?i=vscode,github,git,postman&theme=dark" />
     </a>
-
+    
 <h1>CONCEITOS APLICADOS</h1>   
 <div>
 
@@ -53,6 +54,14 @@ Esse projeto foi proposto pelo professor de PWFE (Programação Web Front End) e
 - API
 - LOCAL STORAGE
 - ASYNC & AWAIT
+
+
+
+<h1>DOCUMENTAÇÃO</h1> 
+
+- A documentação da API foi gerada de forma padrão pelo postman [clique aqui](https://documenter.getpostman.com/view/23640177/2s93JzJzHw) para conferir.
+
+
 
 </div>
    <h1>COLABORADORES</h1>
