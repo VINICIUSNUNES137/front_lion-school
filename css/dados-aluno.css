@@ -20,7 +20,7 @@
 }
 
 .aluno__image {
-  width: 100%;
+  width: 70%;
   /* height: 150px; */
 }
 
@@ -66,23 +66,24 @@
   border-radius: 4px 4px 0 0;
 }
 
-.nota-boa {
-  background-color: var(--primary-color);
-  width: 100%;
-  height: 90%;
-  border-radius: 4px 4px 0 0;
-}
+@media (max-width: 720px) {
+  #student-container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 80vh;
+    /* padding: 32px; */
+  }
+  .dados-aluno {
+    flex-direction: column;
+    gap: 32px;
+    height: fit-content;
+  }
 
-.nota-regular {
-  background-color: var(--secundary-color);
-  width: 100%;
-  height: 60%;
-  border-radius: 4px 4px 0 0;
-}
+  .design__aluno {
+    width: 100%;
+  }
 
-.nota-ruim {
-  background-color: var(--tertiary-color);
-  width: 100%;
-  height: 25%;
-  border-radius: 4px 4px 0 0;
+  .grafico__aluno {
+    width: 100%;
+  }
 }

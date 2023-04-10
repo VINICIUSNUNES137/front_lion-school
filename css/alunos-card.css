@@ -1,5 +1,5 @@
 .aluno-container {
-  /* height: 100%; */
+  overflow-y: scroll;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -63,4 +63,30 @@
 
 .aluno-image {
   width: 100px;
+}
+
+@media (max-width: 720px) {
+  .aluno-container {
+    /* padding: 16px; */
+    height: 70vh;
+    margin-bottom: 32px;
+    padding-top: 16px;
+  }
+
+  .curso__title {
+    font-size: 1.5rem;
+  }
+
+  .container-card {
+    flex-direction: column;
+    overflow: auto;
+    height: fit-content;
+    padding-top: 16px;
+    gap: 16px;
+    align-items: center;
+    justify-content: start;
+  }
+  .legenda {
+    display: none;
+  }
 }
