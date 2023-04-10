@@ -33,7 +33,7 @@ const criarCurso = curso => {
 
 const carregarCursos = async () => {
 
-  const url = 'http://localhost:8080/v1/lion-school/cursos'
+  const url = 'https://backlion-school-production.up.railway.app/v1/lion-school/cursos'
 
   const response = await fetch(url)
   const data = await response.json()
@@ -83,13 +83,13 @@ const carregarAluno = async (status, ano) => {
   //fetch da API de alunos do curso
   let response
   if (status == undefined && ano == undefined) {
-    response = await fetch(`http://localhost:8080/v1/lion-school/alunos?curso=${localStorage.getItem("id")}`)
+    response = await fetch(`https://backlion-school-production.up.railway.app/v1/lion-school/alunos?curso=${localStorage.getItem("id")}`)
   } else if (ano != undefined && status == undefined) {
 
-    response = await fetch(`http://localhost:8080/v1/lion-school/alunos?curso=${localStorage.getItem("id")}${ano}`)
+    response = await fetch(`https://backlion-school-production.up.railway.app/v1/lion-school/alunos?curso=${localStorage.getItem("id")}${ano}`)
 
   } else if (ano == undefined && status != undefined) {
-    response = await fetch(`http://localhost:8080/v1/lion-school/alunos?curso=${localStorage.getItem("id")}${status}`)
+    response = await fetch(`https://backlion-school-production.up.railway.app/v1/lion-school/alunos?curso=${localStorage.getItem("id")}${status}`)
   }
   const data = await response.json()
   let alunos
@@ -113,7 +113,7 @@ const carregarAluno = async (status, ano) => {
   } else {
 
     //fetch da API do nome do curso
-    const responseCurso = await fetch(`http://localhost:8080/v1/lion-school/cursos/${localStorage.getItem("id")}`)
+    const responseCurso = await fetch(`https://backlion-school-production.up.railway.app/v1/lion-school/cursos/${localStorage.getItem("id")}`)
     const dataCurso = await responseCurso.json()
     const nomeCurso = await dataCurso.curso
 
@@ -319,7 +319,7 @@ const createContentStudent = student => {
 }
 //função que cuida de chamar a função create e carrega-la através de um map
 const loadContentStudent = async () => {
-  const url = `http://localhost:8080/v1/lion-school/alunos/${localStorage.getItem("matricula")}`
+  const url = `https://backlion-school-production.up.railway.app/v1/lion-school/alunos/${localStorage.getItem("matricula")}`
 
   const response = await fetch(url)
   const data = await response.json()
