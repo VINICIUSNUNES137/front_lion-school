@@ -323,7 +323,7 @@ const loadContentStudent = async () => {
 
   const response = await fetch(url)
   const data = await response.json()
-  const aluno = await data.aluno
+  const aluno = await data
   const containerAluno = document.getElementById('student-container')
   containerAluno.replaceChildren(createContentStudent(aluno))
 }
